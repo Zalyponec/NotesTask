@@ -6,12 +6,12 @@ plugins {
 
 android {
     namespace 'com.example.notestask'
-    compileSdk 33
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.example.notestask"
         minSdk 23
-        targetSdk 33
+        targetSdk 34
         versionCode 1
         versionName "1.0"
 
@@ -37,7 +37,7 @@ android {
 }
 
 dependencies {
-    def fragment_version = "1.5.5"
+    def fragment_version = "1.6.1"
 
     // Java language implementation
     implementation("androidx.fragment:fragment:$fragment_version")

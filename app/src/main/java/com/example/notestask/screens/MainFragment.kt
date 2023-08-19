@@ -42,7 +42,6 @@ class MainFragment : Fragment() {
     }
 
     private fun initial() {
-
         recyclerView = binding.rvNote
         adapter = NoteAdapter()
         recyclerView.adapter = adapter
@@ -50,16 +49,19 @@ class MainFragment : Fragment() {
     }
     fun myNote(): ArrayList<NoteModel> {
         val notelist = ArrayList<NoteModel>()
-        val note = NoteModel("test","12-12-12", "lkdjhgflaskdhflkajsdhflkjasdhflkjasdhflkjasdhflkjasdhflkjasdhfljkahflkjashdflkjashdflkjhasdlfkjhasdlkjfhaslkdjfhlkasjdhflkajsdhflkasdhflkjashdflkjh")
-        notelist.add(note)
-        val note1 = NoteModel("test","12-12-12", "lkdjhgflaskdhflkajsdhflkjasdhflkjasdhflkjasdhflkjasdhflkjasdhfljkahflkjashdflkjashdflkjhasdlfkjhasdlkjfhaslkdjfhlkasjdhflkajsdhflkasdhflkjashdflkjh")
-        notelist.add(note1)
-        val note2 = NoteModel("test","12-12-12", "lkdjhgflaskdhflkajsdhflkjasdhflkjasdhflkjasdhflkjasdhflkjasdhfljkahflkjashdflkjashdflkjhasdlfkjhasdlkjfhaslkdjfhlkasjdhflkajsdhflkasdhflkjashdflkjh")
-        notelist.add(note2)
-        val note3 = NoteModel("test","12-12-12", "lkdjhgflaskdhflkajsdhflkjasdhflkjasdhflkjasdhflkjasdhflkjasdhfljkahflkjashdflkjashdflkjhasdlfkjhasdlkjfhaslkdjfhlkasjdhflkajsdhflkasdhflkjashdflkjh")
-        notelist.add(note3)
-        val note4 = NoteModel("test","12-12-12", "lkdjhgflaskdhflkajsdhflkjasdhflkjasdhflkjasdhflkjasdhflkjasdhfljkahflkjashdflkjashdflkjhasdlfkjhasdlkjfhaslkdjfhlkasjdhflkajsdhflkasdhflkjashdflkjh")
-        notelist.add(note4)
+        for(i in 1..100) {
+            val note = NoteModel("test","12-12-12", "lkdjhgflaskdhflkajsdhflkjasdhflkjasdhflkjasdhflkjasdhflkjasdhfljkahflkjashdflkjashdflkjhasdlfkjhasdlkjfhaslkdjfhlkasjdhflkajsdhflkasdhflkjashdflkjh")
+            notelist.add(note)
+        }
+
+//        val note1 = NoteModel("test","12-12-12", "lkdjhgflaskdhflkajsdhflkjasdhflkjasdhflkjasdhflkjasdhflkjasdhfljkahflkjashdflkjashdflkjhasdlfkjhasdlkjfhaslkdjfhlkasjdhflkajsdhflkasdhflkjashdflkjh")
+//        notelist.add(note1)
+//        val note2 = NoteModel("test","12-12-12", "lkdjhgflaskdhflkajsdhflkjasdhflkjasdhflkjasdhflkjasdhflkjasdhfljkahflkjashdflkjashdflkjhasdlfkjhasdlkjfhaslkdjfhlkasjdhflkajsdhflkasdhflkjashdflkjh")
+//        notelist.add(note2)
+//        val note3 = NoteModel("test","12-12-12", "lkdjhgflaskdhflkajsdhflkjasdhflkjasdhflkjasdhflkjasdhflkjasdhfljkahflkjashdflkjashdflkjhasdlfkjhasdlkjfhaslkdjfhlkasjdhflkajsdhflkasdhflkjashdflkjh")
+//        notelist.add(note3)
+//        val note4 = NoteModel("test","12-12-12", "lkdjhgflaskdhflkajsdhflkjasdhflkjasdhflkjasdhflkjasdhflkjasdhfljkahflkjashdflkjashdflkjhasdlfkjhasdlkjfhaslkdjfhlkasjdhflkajsdhflkasdhflkjashdflkjh")
+//        notelist.add(note4)
         return notelist
     }
 }
